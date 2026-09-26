@@ -30,8 +30,13 @@ vsim.wlf
 *.hw/
 *.runs/
 *.sim/
+*.tmp/
 *.ip_user_files/
 vivado_pid*.str
+
+# Icarus Verilog generated files
+sim.out
+test_results.log
 
 # Keep Vivado source/project files reviewable when present:
 # *.xpr, *.xdc, *.bd, *.xci, *.srcs/

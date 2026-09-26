@@ -1,0 +1,24 @@
+#include "xparameters.h"
+#include "xil_io.h"
+#include "xil_printf.h"
+#include "sleep.h"
+
+volatile unsigned int *AXIAddr0 =
+    (volatile unsigned int *)XPAR_AXI4_LITE_SLAVE_0_BASEADDR;
+
+int main()
+{
+    xil_printf("\r\n====================================\r\n");
+    xil_printf("Program started successfully!\r\n");
+    xil_printf("UART connection is OK.\r\n");
+    xil_printf("AXI BASEADDR = 0x%08X\r\n", XPAR_AXI4_LITE_SLAVE_0_BASEADDR);
+    xil_printf("====================================\r\n");
+
+    while (1)
+    {
+        xil_printf("Alive...\r\n");
+        sleep(1);
+    }
+
+    return 0;
+}
