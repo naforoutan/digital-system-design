@@ -1,0 +1,37 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor and backup files
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# ModelSim / Questa generated files
+work/
+transcript
+vsim.wlf
+*.wlf
+*.vcd
+*.vstf
+*.ucdb
+*.mpf.bak
+
+# Xilinx Vivado generated and machine-local files
+.Xil/
+*.jou
+*.log
+*.str
+*.backup.jou
+*.backup.log
+*.cache/
+*.hw/
+*.runs/
+*.sim/
+*.ip_user_files/
+vivado_pid*.str
+
+# Keep Vivado source/project files reviewable when present:
+# *.xpr, *.xdc, *.bd, *.xci, *.srcs/
